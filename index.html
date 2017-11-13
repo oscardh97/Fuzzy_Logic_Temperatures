@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fuzzy Logic - Temperaturas</title>
+	<script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<select class="custom-select" id="ciudad">
+	  <option value="Tegucigalpa">Tegucigalpa</option>
+	  <option value="San+Pedro+Sula">San Pedro Sula</option>
+	  <option value="Choluteca">Choluteca</option>
+	  <option value="Comayagua">Comayagua</option>
+	  <option value="La+Ceiba">La Ceiba</option>
+	  <option value="Roatan">Roatan</option>
+	  <option value="New+York">New York</option>
+	  <option value="London">Londres</option>
+	  <option value="Madrid">Madrid</option>
+	  <option value="Paris">Paris</option>
+	  <option value="Juneau">Juneau</option>
+	  <option value="Sidney">Sidney</option>
+	  <option value="Moscow">Moscú</option>
+	  <option value="Phoenix">Phoenix</option>
+	</select>
+	<button type="button" class="btn btn-primary" id="search">Buscar</button><br>
+
+	<h1>Valor Actual</h1><h1 id="valActual"></h1><br>
+	<h3>Valores Anuales</h3><br>
+	<label>Valor Mínimo: </label><span id="valMinY"></span><br>
+	<label>Valor Máximo: </label><span id="valMaxY"></span><br>
+	<table class="table">
+		<thead>
+			<tr>
+				<th scope="col">Muy Helado</th>
+				<th scope="col">Helado</th>
+				<th scope="col">Fresco</th>
+				<th scope="col">Agradable</th>
+				<th scope="col">Ideal</th>
+				<th scope="col">Cálido</th>
+				<th scope="col">Caliente</th>
+				<th scope="col">Muy Caliente</th>
+				<th scope="col">Ardiente</th>
+			</tr>
+		</thead>
+		<tbody id="tableValuesYear">
+		</tbody>
+	</table>
+
+	<h3>Valores Mensuales</h3><br>
+	<label>Valor Mínimo: </label><span id="valMinM"></span><br>
+	<label>Valor Máximo: </label><span id="valMaxM"></span><br>
+	<table class="table">
+		<thead>
+			<tr>
+				<th scope="col">Muy Helado</th>
+				<th scope="col">Helado</th>
+				<th scope="col">Fresco</th>
+				<th scope="col">Agradable</th>
+				<th scope="col">Ideal</th>
+				<th scope="col">Cálido</th>
+				<th scope="col">Caliente</th>
+				<th scope="col">Muy Caliente</th>
+				<th scope="col">Ardiente</th>
+			</tr>
+		</thead>
+		<tbody id="tableValuesMonth">
+		</tbody>
+	</table>
+</body>
+</html>
