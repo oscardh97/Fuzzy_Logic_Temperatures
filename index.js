@@ -63,7 +63,7 @@ var analizeYear = function(months) {
 };
 
 var compare = function(avgValues, actualValue, type) {
-    var mean = Math.abs(avgValues.avgMin - avgValues.avgMax) / 	;
+    var mean = Math.abs(avgValues.avgMin - avgValues.avgMax) / 8;
     var tr = $("<tr></tr>");
     var retVal = "";
 
